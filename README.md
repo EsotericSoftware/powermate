@@ -6,7 +6,9 @@ This Java project can easily be extended to have the PowerMate knob perform othe
 
 ## Installation
 
-For this software to work, the libusb-win32 driver needs to be installed for the PowerMate. [Zadig](http://zadig.akeo.ie/) is the easiest way to do this. The latest version of the tool is [here](https://github.com/EsotericSoftware/powermate/releases).
+Download the latest version [here](https://github.com/EsotericSoftware/powermate/releases).
+
+Note that the libusb-win32 driver must be installed for the PowerMate. [Zadig](http://zadig.akeo.ie/) is the easiest way to do this.
 
 ## License
 
