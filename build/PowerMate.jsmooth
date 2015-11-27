@@ -6,16 +6,11 @@
 <JVMSearchPath>registry</JVMSearchPath>
 <JVMSearchPath>exepath</JVMSearchPath>
 <JVMSearchPath>jview</JVMSearchPath>
-<arguments></arguments>
 <currentDirectory>${EXECUTABLEPATH}</currentDirectory>
 <embeddedJar>true</embeddedJar>
 <executableName>PowerMate.exe</executableName>
 <initialMemoryHeap>8388608</initialMemoryHeap>
 <jarLocation>..\..\target\powermate\dist\onejar\powermate-all.jar</jarLocation>
-<javaProperties>
-<name>-Xms1024</name>
-<value></value>
-</javaProperties>
 <mainClassName>powermate.VolumeControl</mainClassName>
 <maximumMemoryHeap>16777216</maximumMemoryHeap>
 <maximumVersion></maximumVersion>

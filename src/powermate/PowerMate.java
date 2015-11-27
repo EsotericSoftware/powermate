@@ -32,6 +32,7 @@ abstract public class PowerMate {
 	boolean debug;
 	float fadeSpeed = 1f, fadeDelay = 1f;
 	int searchInterval = 5000;
+	int monitorInterval = 500;
 	int monitorTimeout = 5000;
 	int brightnessTimeout = 2000;
 
@@ -83,6 +84,15 @@ abstract public class PowerMate {
 						if (brightness < 0) brightness = 0;
 						setBrightness(brightness);
 						brightnessDelay = 0;
+					}
+					try {
+						Thread.sleep(33);
+					} catch (Exception ignored2) {
+					}
+				} else {
+					try {
+						Thread.sleep(monitorInterval);
+					} catch (Exception ignored2) {
 					}
 				}
 
