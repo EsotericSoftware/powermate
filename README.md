@@ -8,7 +8,7 @@ This Java project can easily be extended to have the PowerMate knob perform othe
 
 Download the latest version [here](https://github.com/EsotericSoftware/powermate/releases).
 
-Note that the libusb-win32 driver must be installed for the PowerMate. [Zadig](http://zadig.akeo.ie/) is the easiest way to do this (choose the Griffin PowerMate device from the list and install the "libusb-win32" driver).
+Note that the libusb-win32 driver must be installed for the PowerMate. [Zadig](http://zadig.akeo.ie/) is the easiest way to do this (`Options` -> `List All Devices`, choose `Griffin PowerMate` from the select box, change the driver name to `libusb-win32`, then click `Replace Driver`).
 
 ## License
 
