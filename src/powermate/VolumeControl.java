@@ -28,15 +28,16 @@ public class VolumeControl extends PowerMate {
 	float volume = -1;
 	float sensitivity = 0.04f;
 
-	public VolumeControl () {
+	public VolumeControl (boolean debug) {
+		this.debug = debug;
 		run();
 	}
 
 	public void connected () {
 		if (volume == -1) {
 			try {
-				volume = Integer.parseInt(new Scanner(Runtime.getRuntime().exec("getvol.exe").getInputStream()).useDelimiter("\\A")
-					.next()) / 100f;
+				volume = Integer
+					.parseInt(new Scanner(Runtime.getRuntime().exec("getvol.exe").getInputStream()).useDelimiter("\\A").next()) / 100f;
 			} catch (Exception ex) {
 				volume = 1;
 			}
@@ -62,6 +63,9 @@ public class VolumeControl extends PowerMate {
 	}
 
 	static public void main (String[] args) throws Exception {
-		new VolumeControl();
+		boolean debug = false;
+		for (int i = 0, n = args.length; i < n; i++)
+			if (args[i].equalsIgnoreCase("debug")) debug = true;
+		new VolumeControl(debug);
 	}
 }
